@@ -381,6 +381,7 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout, LSTM, Embedding, Input, RepeatVector
 from keras.optimizers import SGD
 
+
 def baseline_model():
     model = Sequential()
     model.add(Dense(256, input_dim=Text_INPUT_DIM+Gene_INPUT_DIM*2, init='normal', activation='relu'))
